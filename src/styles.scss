@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6cdcd;
+  height: 100%;
+  //   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  padding-left: 150px;
+  padding-right: 230px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  .navbar-brand {
+    min-height: 70px;
+    margin-right: 120px;
+    img {
+      z-index: 99;
+      height: 96px;
+      display: block;
+      position: absolute;
+      margin-top: -10px;
+      margin-left: 0px;
+      border: #fff 4px solid;
+      -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+      -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.slick-slider {
+  width: 100%;
+  background-color: transparent;
+  .slick-track {
+    // display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+    justify-content: center;
+  }
+  .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 40px 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(180deg, #ffffff, #ebebeb);
+    height: auto;
+    text-align: center;
+    h5 {
+      margin-top: 30px;
+    }
+    .slide-link {
+      margin-top: 20px;
+      color: #000;
+      display: none;
+      &:after {
+        content: "\003E";
+        color: #000;
+        margin-left: 10px;
+      }
+    }
+    &.slick-current,
+    &.slick-center {
+      padding: 50px 10px;
+      border-bottom: 6px solid #FFC000;
+      img {
+        width: 40%;
+        height: auto;
+      }
+      h5 {
+        font-size: 30px;
+      }
+      .slide-link {
+        display: block;
+      }
+    }
+  }
+}
+
+.slick-slide:hover {
+  background-color: #000;
+  background-image: linear-gradient(180deg, #373737, #191919);
+  color: #fff;
+}
+
+.slick-slide:hover .slide-link,
+.slick-slide:hover .slide-link::after {
+  color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  height: 40px;
+  width: 40px;
+  background: #000;
+  border-radius: 50%;
+  top: 70%;
+}
+.slick-prev {
+  left: 20%;
+}
+.slick-next {
+  right: 20%;
+}
+
+.slick-prev:before {
+  content: "\003C";
+}
+.slick-next:before {
+  content: "\003E";
+}
+
+.slick-prev:before,
+.slick-next:before {
+  position: relative;
+  top: -2px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: #FFC000;
+  color: #000;
+}
+
+.disc-link::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFC000;
+  border-radius: 50%;
+}
